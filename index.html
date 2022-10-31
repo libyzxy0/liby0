@@ -907,17 +907,17 @@
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Send Message</h3>
 
-          <form class="form" id="myForm" data-form>
+          <form action="https://formspree.io/f/myyvnagz" method="POST" class="form" id="myForm" data-form>
 
             <div class="input-wrapper">
-              <input type="text" id="name" class="form-input" placeholder="Name" data-form-input>
+              <input type="text" name="name" class="form-input" placeholder="Name" data-form-input>
 
-              <input type="email" id="email" class="form-input" placeholder="Email address" data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" data-form-input>
             </div>
 
-            <textarea id="msg" class="form-input" placeholder="Your Message" data-form-input></textarea>
+            <textarea name="msg" class="form-input" placeholder="Your Message" data-form-input></textarea>
 
             <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
