@@ -161,6 +161,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
   
 }
 
-
 //Disable Context Menu Chrome
 window.oncontextmenu = function() { return false; }
