@@ -395,6 +395,7 @@ main {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-bottom: -7px;
 }
 
 .contact-info {
@@ -421,9 +422,8 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
   padding-left: 7px;
-  margin-bottom: 4px;
 }
 
 .social-item .social-link {
