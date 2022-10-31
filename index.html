@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="unselectable">
 
   <!--
     - #MAIN
@@ -909,15 +909,15 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form class="form" id="myForm" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" id="name" class="form-input" placeholder="Name" data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" id="email" class="form-input" placeholder="Email address" data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea id="msg" class="form-input" placeholder="Your Message" data-form-input></textarea>
 
             <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
@@ -959,117 +959,37 @@
             
             <h3 class="h3 second-title">Favorite Songs</h3>
             
-            <h5 class="h5">• Somewhere only we know</h5>
+            <div class="sounds">
+            <h5 class="h5" onclick="soundOne()">Somewhere only we know</h5>
             
-            <h3 class="h3 second-title">Favorite Subject</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Science</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Filipino</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 86%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Math</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 89%;"></div>
-              </div>
-
-            </li>
-            
-            
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">English</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
-            </li>
+            <h5 class="h5" onclick="soundTwo()">The Lumineers - Ho Hey</h5>
+            </div>
             
             
             
-            <li class="skills-item">
 
-              <div class="title-wrapper">
-                <h5 class="h5">Mapeh</h5>
-                
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 76%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">TLE</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 93%;"></div>
-              </div>
-
-            </li>
             
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Homeroom Guidance</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 66%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        
+            
+            
       </article>
     </div>
 
   </main>
 
 
-
-
+<!-- Hidded Contents -->
+<audio id="sound1" src="cache/test.mp3" type="audio/mp3">
+<audio id="sound2" src="cache/1.mp4" type="audio/mp4">
+    
+            
 
 
   <!--
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-
+  
+  
   <!--
     - ionicon link
   -->
