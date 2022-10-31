@@ -162,27 +162,5 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
-//Audios
-
-document.querySelector("#play1").addEventListener("click", () => { 
-    document.getElementById("sound1").play();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").pause();
-})
-
-document.querySelector("#play2").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").play();
-    document.getElementById("sound3").pause();
-})
-
-document.querySelector("#play3").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").play();
-})
-
-
-
 //Disable Context Menu Chrome
 window.oncontextmenu = function() { return false; }
