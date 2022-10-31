@@ -1,6 +1,3 @@
-'use strict';
-
-
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -133,7 +130,8 @@ for (let i = 0; i < formInputs.length; i++) {
     }
 
   });
-}
+} 
+
 
 
 
@@ -157,5 +155,19 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+  
 }
-close();
+
+//Audio
+function soundOne() {
+   var soundOne = document.getElementById("sound1");
+   soundOne.play();
+}
+function soundTwo() {
+   var soundTwo = document.getElementById("sound2");
+   soundTwo.play();
+}
+
+
+//Disable Context Menu Chrome
+window.oncontextmenu = function() { return false; }
