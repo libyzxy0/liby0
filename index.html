@@ -966,16 +966,46 @@
             <h5 class="h5" id="play3">I wanna be yours - Acrtic Monkeys</h5>
             <h5 class="h5" id="play4">Until i found you - Stephen Sanchez</h5>
             <h5 class="h5" id="play5">Dumb Dumb - Mazie</h5>
-            <h5 class="h5" id="play6">Shinunoga - Fujii Kaze</h5>
-            
-            
+            <h5 class="h5" id="play6">Shinunoga - Fujii Kaze</h5>    
             </div>
             
+            <h3 class="h3 second-title">Appearance</h3>
             
+            <div class="appearance">
             
-
+            <h4 class="h4 third-title">Color</h4>
             
+            <div class="colors">
+            <h5 class="h5" onclick="greenColor()">Green</h5>
             
+            <h5 class="h5" onclick="blueColor()">Blue</h5>
+            <h5 class="h5" onclick="pinkColor()">Pink</h5>
+            <h5 class="h5" onclick="redColor()">Red</h5>
+            </div>
+            
+            <h4 class="h4 third-title">Theme</h4>
+            
+            <div class="theme">
+            <h5 class="h5" onclick="darkTheme()">Dark</h5>
+            
+            <h5 class="h5" onclick="lightTheme()">Light</h5>
+            </div>
+            
+            </div>
+            <h3 class="h3 second-title">Useless Prompt</h3>
+            <center>
+                <button style="border: none; background: var(--primary); padding: 8px 16px; border-radius: 8px;" class="h5" onclick="popup()">Clickme</button>
+                <script type="text/javascript">
+                    function popup() {
+                       var a = prompt("Enter your name!")
+                       if(a == "" || a === null) {
+                        alert("Error");
+                      } else {
+                      alert("Iloveyousomuchhh " + a + " Mwauahh!");
+                     }
+                       }
+                </script>
+            </center>
             
       </article>
     </div>
@@ -993,11 +1023,16 @@
 
     
  <!--
-    - Play js link
+    - Playjs
   -->
+  
   <script src="assets/js/play.js"></script>
               
-
+ <!--
+    - Themejs
+  -->
+  
+  <script src="assets/js/theme.js"></script>
 
   <!--
     - custom js link
