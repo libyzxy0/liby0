@@ -137,7 +137,12 @@ body { background: var(--smoky-black); }
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-
+.colored {
+    color: var(--primary);
+    font-weight: 1000;
+    display: flex;
+    flex-direction: row;
+}
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -317,15 +322,24 @@ main {
   letter-spacing: -0.25px;
   margin-bottom: 10px;
 }
-
-.info-content .title {
+.info-content .badges {
+    display: flex;
+    flex-direction: row;
+}
+.rank_badge_yellow {
+    background: #fff155;
+}
+.rank_badge_green {
+    background: #5cff40;
+}
+.info-content .badges .badge {
   color: var(--white-1);
-  background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
   padding: 3px 12px;
-  border-radius: 8px;
+  border-radius: 3px;
+  margin: 0 3px;
 }
 
 .info_more-btn {
@@ -780,7 +794,10 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+.skills-title { 
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
 
 .skills-list { padding: 20px; }
 
