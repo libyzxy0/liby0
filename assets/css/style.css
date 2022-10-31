@@ -1187,7 +1187,26 @@ textarea.form-input::-webkit-resizer { display: none; }
    margin-bottom: 20px;
    margin-top: 20px;
 }
+.fun .sounds h5 {
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.fun .sounds h5:hover {
+    color: var(--primary);
+}
 
+
+
+.unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #cc0000;
+       -khtml-user-select: none; 
+       -webkit-tap-highlight-color: transparent;
+}
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
