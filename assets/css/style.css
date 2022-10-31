@@ -423,6 +423,7 @@ main {
   gap: 15px;
   padding-bottom: 7px;
   padding-left: 7px;
+  margin-bottom: 4px;
 }
 
 .social-item .social-link {
