@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Pacifico&display=swap');
+
 :root {
 
   --bg-gradient-onyx: linear-gradient(
@@ -484,7 +484,7 @@ main {
 .about-text p { margin-bottom: 15px; }
 
 .hl {
-    font-family: 'Pacifico', cursive;
+    font-family: var(--ff-poppins);
 }
 
 
