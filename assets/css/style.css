@@ -1,10 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Pacifico&display=swap');
 :root {
-
-  /**
-   * colors
-   */
-
-  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -26,8 +21,9 @@
     hsl(0, 0%, 25%) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
-
-  /* solid */
+  
+  
+  --primary: #2bffab;
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
@@ -42,12 +38,8 @@
   --eerie-black-2: hsl(240, 2%, 12%);
   --eerie-black-1: hsl(240, 2%, 13%);
 
-  /**
-   * typography
-   */
 
-  /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;;
 
   /* font-size */
   --fs-1: 24px;
@@ -65,19 +57,12 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * shadow
-   */
-  
+
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-
-  /**
-   * transition
-   */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
@@ -137,9 +122,15 @@ body { background: var(--smoky-black); }
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+
+.active_colored {
+    color: var(--primary);
+}
+
 .colored {
     color: var(--primary);
     font-weight: 1000;
+    font-size: 18px;
     display: flex;
     flex-direction: row;
 }
@@ -492,6 +483,9 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
+.hl {
+    font-family: 'Pacifico', cursive;
+}
 
 
 /**
@@ -514,7 +508,7 @@ main {
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  z-index: 1;
+  z-index: 0;
 }
 
 .service-item::before {
@@ -1188,31 +1182,31 @@ textarea.form-input::-webkit-resizer { display: none; }
 .fun .second-title {
    margin-bottom: 20px;
    margin-top: 20px;
+   font-size: 24px;
+   color: var(--primary);
 }
 .fun .third-title {
    margin-bottom: 10px;
    margin-top: 15px;
+   font-size: 18px;
 }
 .fun .sounds h5 {
     margin-bottom: 10px;
     transition: 0.3s;
-}
-.fun .sounds h5:hover {
-    color: var(--primary);
+    color: white;
 }
 
 .fun .colors h5 {
     margin-bottom: 10px;
 }
-.fun .colors h5:hover {
-    color: var(--primary);
-}
+
 .fun .theme h5 {
     margin-bottom: 10px;
 }
-.fun .theme h5:hover {
+.fun .theme h5:hover, .fun .colors h5:hover, .fun .sounds h5:hover {
     color: var(--primary);
 }
+
 
 .unselectable {
         -webkit-user-select: none;
@@ -1223,6 +1217,30 @@ textarea.form-input::-webkit-resizer { display: none; }
         color: #cc0000;
        -khtml-user-select: none; 
        -webkit-tap-highlight-color: transparent;
+}
+/* Toast */
+.toast_parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast {
+    position: fixed;
+    bottom: 0;
+    background: var(--onyx);
+    height: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 3;
+    box-shadow: var(--shadow-1);
+    display: none;
+}
+.toast_text {
+    color: var(--primary);
+    margin-top: 0.4rem;
+    padding: 0 10px;
 }
 /*-----------------------------------*\
   #RESPONSIVE
