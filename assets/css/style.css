@@ -39,7 +39,7 @@
   --eerie-black-1: hsl(240, 2%, 13%);
 
 
-  --ff-poppins: 'Poppins', sans-serif;;
+  --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -1239,7 +1239,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 .toast_text {
     color: var(--primary);
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
     padding: 0 10px;
 }
 /*-----------------------------------*\
