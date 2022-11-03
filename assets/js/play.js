@@ -1,97 +1,100 @@
+var mainSound = document.getElementById("background_music")
+var sound = document.getElementById("sound");
+var sound1 = document.getElementById("sound1");
+var sound2 = document.getElementById("sound2");
+var sound3 = document.getElementById("sound3");
+var sound4 = document.getElementById("sound4");
+var sound5 = document.getElementById("sound5");
+var sound6 = document.getElementById("sound6");
 
-//Audios
-
-document.querySelector("#play1").addEventListener("click", () => {
-    document.getElementById("sound1").play();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").pause();
-    document.getElementById("sound4").pause();
-    document.getElementById("sound5").pause();
-    document.getElementById("sound6").pause();
-    document.getElementById("sound7").pause();
     
-    document.getElementById("background_music").pause();
-})
-
-document.querySelector("#play2").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").play();
-    document.getElementById("sound3").pause();
-    document.getElementById("sound6").pause();
-    document.getElementById("sound5").pause();
-    document.getElementById("sound6").pause();
-    document.getElementById("sound7").pause();
-    
-    document.getElementById("background_music").pause();
-})
-
-document.querySelector("#play3").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").play();
-    document.getElementById("sound4").pause();
-    document.getElementById("sound5").pause();
-    document.getElementById("sound6").pause();
-    
-    document.getElementById("background_music").pause();
-})
-
-document.querySelector("#play4").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").pause();
-    document.getElementById("sound4").play();
-    document.getElementById("sound5").pause();
-    document.getElementById("sound6").pause();
-    document.getElementById("sound7").pause();
-    
-    document.getElementById("background_music").pause();
-})
-
-document.querySelector("#play5").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").pause();
-    document.getElementById("sound6").pause();
-    document.getElementById("sound5").play();
-    document.getElementById("sound6").pause();
-    document.getElementById("sound7").pause();
-    
-    document.getElementById("background_music").pause();
-})
-
-document.querySelector("#play6").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").pause();
-    document.getElementById("sound4").pause();
-    document.getElementById("sound5").pause();
-    document.getElementById("sound6").play();
-    document.getElementById("sound7").pause();
-    
-    document.getElementById("background_music").pause();
-})
-document.querySelector("#play7").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").pause();
-    document.getElementById("sound4").pause();
-    document.getElementById("sound5").pause();
-    document.getElementById("sound6").pause();
-    document.getElementById("sound7").play();
-    
-    document.getElementById("background_music").pause();
-})
 
 document.querySelector("#playBG").addEventListener("click", () => {
-    document.getElementById("sound1").pause();
-    document.getElementById("sound2").pause();
-    document.getElementById("sound3").pause();
-    document.getElementById("sound4").pause();
-    document.getElementById("sound5").pause();
-    document.getElementById("sound6").pause();
-    document.getElementById("sound7").pause();
-    
-    
-    document.getElementById("background_music").play();
+    toastShow("Playing Background music...");
+    p(mainSound);
+    s(sound);
+    s(sound1);
+    s(sound2);
+    s(sound3);
+    s(sound4);
+    s(sound5);
+    s(sound6);
 })
+document.querySelector("#play").addEventListener("click", () => {
+    toastShow("Playing Somewhere only we know - Keane...");
+    s(mainSound);
+    p(sound);
+    s(sound1);
+    s(sound2);
+    s(sound3);
+    s(sound4);
+    s(sound5);
+    s(sound6);
+})
+document.querySelector("#play1").addEventListener("click", () => {
+    toastShow("Playing The Lumineers - Ho Hey...");
+    s(mainSound);
+    s(sound);
+    p(sound1);
+    s(sound2);
+    s(sound3);
+    s(sound4);
+    s(sound5);
+    s(sound6);
+})
+document.querySelector("#play2").addEventListener("click", () => {
+    toastShow("Playing I wanna be yours - Acrtic Monkeys...");
+    s(mainSound);
+    s(sound);
+    s(sound1);
+    p(sound2);
+    s(sound3);
+    s(sound4);
+    s(sound5);
+    s(sound6);
+})
+document.querySelector("#play3").addEventListener("click", () => {
+    toastShow("Playing Until i found you - Stephen Sanchez...");
+    s(mainSound);
+    s(sound);
+    s(sound1);
+    s(sound2);
+    p(sound3);
+    s(sound4);
+    s(sound5);
+    s(sound6);
+})
+document.querySelector("#play4").addEventListener("click", () => {
+    toastShow("Playing Dumb Dumb - Mazie...");
+    s(mainSound);
+    s(sound);
+    s(sound1);
+    s(sound2);
+    s(sound3);
+    p(sound4);
+    s(sound5);
+    s(sound6);
+})
+document.querySelector("#play5").addEventListener("click", () => {
+    toastShow("Playing Shinunoga - Fujii Kaze...");
+    s(mainSound);
+    s(sound);
+    s(sound1);
+    s(sound2);
+    s(sound3);
+    s(sound4);
+    p(sound5);
+    s(sound6);
+})
+document.querySelector("#play6").addEventListener("click", () => {
+    toastShow("Playing I Love You So - The Walters...");
+    s(mainSound);
+    s(sound);
+    s(sound1);
+    s(sound2);
+    s(sound3);
+    s(sound4);
+    s(sound5);
+    p(sound6);
+})
+
