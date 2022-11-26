@@ -212,7 +212,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
           <li class="navbar-item">
@@ -740,13 +740,13 @@
 
 
       <!--
-        - #PORTFOLIO
+        - #Projects
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
@@ -788,17 +788,13 @@
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
-
+              
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Cloud Apps</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item>Web Development</button>
               </li>
 
             </ul>
@@ -807,7 +803,26 @@
 
           <ul class="project-list">
 
-           <!-- Web Development -->
+           <!-- Cloud Development -->
+            <li class="project-item  active" data-filter-item data-category="cloud apps">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project/saijitaiji.png" alt="Saiji" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Saiji Taiji</h3>
+
+                <p class="project-category">Cloud Apps</p>
+
+              </a>
+            </li>
+            
+            <!-- Web Development -->
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
@@ -816,55 +831,15 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project/askyourcrush.png" alt="Askyourcrush" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Ask Your Crush</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web Development</p>
 
               </a>
             </li>
-
-            
-            <!-- Web Design -->
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-             <!-- Applications -->
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
             
           </ul>
 
@@ -1015,14 +990,14 @@
               <div class="content-card" data-friends-item>
 
                 <figure class="friends-avatar-box">
-                  <img src="https://graph.facebook.com/100027037117607/picture?width=720&height=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662" width="60" data-friends-avatar>
+                  <img src="https://graph.facebook.com/100027037117607/picture?width=720&height=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662" alt="Glaibie McDonough" width="60" data-friends-avatar>
                 </figure>
 
                 <h4 class="h4 friends-item-title" data-friends-title>Glaibie McDonough</h4>
 
                 <div class="friends-text" data-friends-text>
                   <p>
-                    Hi, he is glaibiee, my crushiecakess!<p class="colored" onclick="window.location.href='https://www.facebook.com/glaibie.mcdonough'">Profile</p>
+                    Hi, he is glaibiee, my one and only crushiecakess!<p class="colored" onclick="window.location.href='https://www.facebook.com/glaibie.mcdonough'">Profile</p>
                   </p>
                 </div>
 
@@ -1062,7 +1037,7 @@
             <div class="theme">
             <h5 class="h5" onclick="darkTheme()">Dark</h5>
             
-            <h5 class="h5" onclick="lightTheme()">Light(may be affect performance)</h5>
+            <h5 class="h5" onclick="lightTheme()">Light(under development)</h5>
             </div>
             
             </div>
@@ -1082,6 +1057,7 @@
          
 
   </main>
+  
  <!-- Toast -->
 <div class="toast_parent">
     <div id="toast" class="toast">
@@ -1102,12 +1078,10 @@
     
     
 
-  <script src="../gdgs/v-efe0e2ee4eefe.js"></script>
   <script src="assets/js/test.js"></script>
   <script src="assets/js/play.js"></script> 
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/page_function.js"></script>
   <script src="https://manhict.tech/js/clickchuot.js"></script>
   <!--
     - ionicon link
