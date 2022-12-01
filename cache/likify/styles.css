@@ -86,7 +86,7 @@ body {
     color: hsla(0, 0%, 84%, 0.7);
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 16px;
     transition: 0.3s;
 }
 .navbar .links a:hover {
