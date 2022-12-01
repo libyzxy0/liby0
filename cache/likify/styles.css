@@ -32,9 +32,8 @@ body {
 .top_card p {
     color: hsla(0, 0%, 84%, 0.7);
     text-align: center;
-    padding: 1rem;
-    text-align: center;
-}
+    padding: 1rem 1rem;
+} 
 .content {
     padding-top: 1rem;
     margin: 0 20px;
