@@ -1,0 +1,108 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kei Sy teach, you can teach keisy here!">
+    <title>libyzxy0 | Kei Sy teach</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1A1A1A;
+}
+h1 {
+    text-align: center;
+    color: #00abff;
+    margin-top: 5rem;
+    font-family: 'Nerko One', cursive;
+    font-size: 45px;
+} 
+.input-fields {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.input-fields form .message {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-fields form .message input[type=text] {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;  
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: #a9a9a9;
+    transition: 0.3s;
+    background-color: #121212;
+}
+.input-fields form .reply {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.input-fields form .reply input[type=text] {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: #a9a9a9;
+    transition: 0.3s;
+    background-color: #121212;
+}
+.input-fields form button[type=submit] {
+    background-color: #00abff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 90%;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    margin-top: 2.5rem;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.input-fields form button[type=submit]:hover {
+    opacity: 0.8;
+}
+    </style>
+    <h1>Teach</h1>, 
+    <div class="input-fields">
+    <form action="https://api.libyzxy0.repl.co/api/keisyteach" method="post">
+    <div class="message">
+        <input type="text" id="message" name="message" placeholder="Message" autocomplete="off" required>
+    </div>
+    <div class="reply">
+        <input type="text" id="reply" name="reply" placeholder="Reply" autocomplete="off" required>
+    </div>
+    <button type="submit">Teach</button>
+    </form>
+    </div>
+</body>
+</html>
